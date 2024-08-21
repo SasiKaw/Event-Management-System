@@ -1,0 +1,16 @@
+D:\Group Project\Event Management Application\Event Management Application\bin\Debug\Event Management Application.exe.config
+D:\Group Project\Event Management Application\Event Management Application\bin\Debug\Event Management Application.exe
+D:\Group Project\Event Management Application\Event Management Application\bin\Debug\Event Management Application.pdb
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event Management Application.csproj.AssemblyReference.cache
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Properties.Resources.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event Management Application.csproj.GenerateResource.cache
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event Management Application.csproj.CoreCompileInputs.cache
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event Management Application.exe
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event Management Application.pdb
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Dashboard.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Login.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Customer.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Booking.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Events.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.DueHandlingcs.resources
+D:\Group Project\Event Management Application\Event Management Application\obj\Debug\Event_Management_Application.Form1.resources

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DA8311E-2B91-4A7D-B825-BBF127772A84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Event_Management_Application</RootNamespace>
+    <AssemblyName>Event Management Application</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="DueHandlingcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DueHandlingcs.Designer.cs">
+      <DependentUpon>DueHandlingcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events.Designer.cs">
+      <DependentUpon>Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DueHandlingcs.resx">
+      <DependentUpon>DueHandlingcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events.resx">
+      <DependentUpon>Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event-management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_88213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wed-800x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_882131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bride-to-be-complete-decoration-combo-for-bride-bachelorette-original-imahfps9kzxqfgdw-ezgif.com-webp-to-jpg-converter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17396a5d7fdaf10252ab720d9548b3ea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb792c1481fb64c4a4f35753b14429a8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-07-24 at 12.49.21_067d3a9e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-07-24 at 12.53.29_bf2effd4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-07-24 at 12.49.00_f1c9d3ee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\larry_walshe_studios_monkey_island_estate_kristina_kempton_lavish_intimate_red_wedding_flowers_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\815d34QZY2L._AC_UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traditional-seamless-asian-lotus-flower-260nw-2092093510-ezgif.com-webp-to-jpg-converter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_3917772.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803105216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803105441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803105631.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803105916.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803110027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image202408031100271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803110203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803110710.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803110825.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240803111052.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240819200058.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image20240819200110.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
